@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="pointcloudtopng" pkg="pointcloudtopng" type="pointcloudtopng" output="screen" >
+    <param name="png_name" value="" />
+  </node>
+<!--
+ <arg name="model" default="RS32" />
+  <arg name="lidar_param_path" default="$(find rslidar_pointcloud)/data/32-B234/"/>
+  <node name="cloud_node" pkg="rslidar_pointcloud" type="cloud_node" output="screen" >
+    <param name="model" value="$(arg model)"/>
+    <param name="curves_path" value="$(arg lidar_param_path)/curves.csv" />
+    <param name="angle_path" value="$(arg lidar_param_path)/angle.csv" />
+    <param name="channel_path" value="$(arg lidar_param_path)/ChannelNum.csv" />
+    <param name="channel_distance_path" value="$(arg lidar_param_path)/ChannelNumDistance.csv" />
+    <param name="curves_rate_path" value="$(arg lidar_param_path)/CurveRate.csv" />
+    <param name="realtime_dist_adjustment_on" value="false" />
+    <param name="dist_data_calib_on" value="false" />
+  </node>
+-->
+  <!--
+  <group ns="middle">
+  <arg name="lidar_model" default="RS32" />
+  <arg name="lidar_param_path" default="$(find rslidar_pointcloud)/data/rs_lidar_32" />
+  <node  name="cloud_node" pkg="rslidar_pointcloud" type="cloud_node" output="screen" >
+    <param name="model" value="$(arg lidar_model)"/>
+    <param name="curves_path" value="$(arg lidar_param_path)/curves.csv" />
+    <param name="angle_path" value="$(arg lidar_param_path)/angle.csv" />
+    <param name="channel_path" value="$(arg lidar_param_path)/ChannelNum.csv" />
+    <param name="curves_rate_path" value="$(arg lidar_param_path)/CurveRate.csv" />
+  </node>
+  </group>
+  -->
+  
+</launch>
